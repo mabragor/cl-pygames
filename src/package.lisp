@@ -1,5 +1,5 @@
 ;;;; package.lisp
 
 (defpackage #:cl-pygames
-  (:use #:cl))
+  (:use #:cl #:sdl2))
 
