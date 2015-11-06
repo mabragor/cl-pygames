@@ -22,7 +22,7 @@
   (with-init (:everything)
     (with-window (win :title "Animation" :w 400 :h 300)
       (with-renderer (rend win)
-	(let ((penguin (create-texture-from-surface rend (%load-bmp "/home/popolit/quicklisp/local-projects/cl-pygames/penguen.bmp")))
+	(let ((penguin (create-texture-from-surface rend (%load-bmp "/home/popolit/quicklisp/local-projects/cl-pygames/mushroom.bmp")))
 	      (pen-x 10)
 	      (pen-y 10)
 	      (direction :right)
@@ -45,7 +45,7 @@
 						    (if (= 10 pen-y)
 							(setf direction :right)))))
 		   (apply #'set-render-draw-color `(,rend ,@*black*))
-		   (render-copy rend penguin :dest-rect (make-rect pen-x pen-y 50 60))
+		   (render-copy rend penguin :dest-rect (make-rect pen-x pen-y 50 50))
 		   (render-present rend)
 		   (if fps-cap
 		       (let ((dt (funcall delta-t)))
