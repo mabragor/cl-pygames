@@ -6,6 +6,7 @@
   :version "0.1"
   :license "MIT???" ;; I honestly don't know how the code of the book is licenced
   :serial t
+  :depends-on (#:sdl2)
   :components ((:module "src"
 			:pathname "src/"
 			:serial t
